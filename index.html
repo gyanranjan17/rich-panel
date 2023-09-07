@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Create Account</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="inp" placeholder="Type your name here..." class ="inp" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="inp" class ="inp" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="inp" class ="inp" id="password" name="password" required>
+            </div>
+            <div class="remember">
+                <input type="checkbox" id="remember" name="remember">
+                <span for="remember">Remember Me</span>    
+            </div>
+            <button type="button" onclick="validateLogin()">Sign Up</button>
+        </form>
+        <p id="errorText" class="error"></p>
+        <p>Already have an account? <a href="signup.html">Login</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
